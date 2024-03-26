@@ -1,0 +1,70 @@
+:root {
+  ---black: #000000;
+  --white: #ffffff;
+  --background-color: #292b32;
+  --background-color-light-mode: #f7f7f8;
+  --card-background-color: #3b3e47;
+  --card-background-color-light-mode: #ffffff;
+  --card-2-background-color: #182729;
+  --card-2-background-color-light-mode: #f9f8ff;
+  --card-2-background-color-light-mode-2: #f4f9ff;
+  --card-2-para-2-color: #dfdfdf;
+  --card-2-para-2-color-light-mode: #525965;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+}
+.App {
+  background-color: var(--background-color);
+  transition: all 1s ease-in;
+}
+
+/* Light Mode related styles */
+.App.light-mode {
+  background-color: var(--background-color-light-mode);
+}
+
+.App.light-mode .heading h2,
+.App.light-mode .heading-container,
+.App.light-mode .heading-cont h2 {
+  color: var(---black);
+}
+
+.App.light-mode .card,
+/* .App.light-mode .ad-details-cont, */
+.App.light-mode .ad-details-cont .ad-para {
+  background-color: var(--card-background-color-light-mode);
+}
+
+.App.light-mode .card {
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+}
+
+.App.light-mode .card-heading,
+.App.light-mode .card2::before,
+.App.light-mode .card2::after {
+  background-color: var(--card-2-background-color-light-mode-2);
+}
+
+.App.light-mode .card-1-container,
+.App.light-mode .details-cont,
+.App.light-mode .btn-container {
+  background-color: var(--background-color-light-mode);
+}
+
+.App.light-mode .para-2 {
+  color: var(--card-2-para-2-color-light-mode);
+}
+
+.App.light-mode .para-1,
+.App.light-mode .card2-heading-container h4,
+.App.light-mode .left-detail h5,
+.App.light-mode .right-detail h5 {
+  color: var(---black);
+}
+
+/*  */
