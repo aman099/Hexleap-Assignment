@@ -150,7 +150,7 @@ const sports_details_2 = [
     timeClock: "4:30",
     location: "las vegas ballpark, las vegas",
     collection: "take flight", // 0
-    gradientColor: "bg-gradient-to-r from-sky-500 to-indigo-500",
+    gradientColor: "bg-gradient-to-r from-[#0ea5e9] to-[#6366f1]",
   },
   {
     id: 2,
@@ -172,7 +172,7 @@ const sports_details_2 = [
     timeClock: "4:30",
     location: "las vegas ballpark, las vegas",
     collection: "take flight", //2
-    gradientColor: "bg-gradient-to-r from-sky-500 to-indigo-500",
+    gradientColor: "bg-gradient-to-r from-[#0ea5e9] to-[#6366f1]",
   },
   {
     id: 4,
@@ -183,7 +183,7 @@ const sports_details_2 = [
     timeClock: "3:00",
     location: "baltimore ballpark, texas",
     collection: "take flight", // 3
-    gradientColor: "bg-gradient-to-r from-sky-500 to-indigo-500",
+    gradientColor: "bg-gradient-to-r from-[#0ea5e9] to-[#6366f1]",
   },
   {
     id: 5,

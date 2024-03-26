@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Fragment, useState, useEffect } from "react";
+import { useState } from "react";
 import "./Card.css";
 
 import useMediaQuery from "../useMediaQuery/useMediaQuery";
@@ -92,6 +92,7 @@ function Card2({ sports_details_2 }: Props) {
                 </p>
                 <p className="para-2">{sport.location}</p>
                 <button
+                  // ref={collectionRef}
                   style={{}}
                   className={`collection before:content-[''] before:${sport.gradientColor}`}
                 >
