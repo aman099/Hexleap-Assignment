@@ -4,7 +4,7 @@ import "./Card.css";
 
 import useMediaQuery from "../useMediaQuery/useMediaQuery";
 
-interface Sports {
+interface Sports2 {
   id: number;
   img: string;
   heading: string;
@@ -13,10 +13,11 @@ interface Sports {
   timeClock: string;
   location: string;
   collection: string;
+  gradientColor: string;
 }
 
 interface Props {
-  sports_details_2: Sports[];
+  sports_details_2: Sports2[];
 }
 
 function Card2({ sports_details_2 }: Props) {
@@ -26,7 +27,7 @@ function Card2({ sports_details_2 }: Props) {
   const [activeIndex1, setActiveIndex1] = useState(0);
   const [activeIndex2, setActiveIndex2] = useState(1);
   const [activeIndex3, setActiveIndex3] = useState(2);
-  let bgColor: string | boolean;
+  // let bgColor: string | boolean;
 
   function handlePrevClick() {
     setActiveIndex1((activeIdx1) =>
@@ -59,16 +60,16 @@ function Card2({ sports_details_2 }: Props) {
       </button>
       <div className="carousel flex gap-10">
         {sports_details_2.map((sport, idx) => {
-          bgColor =
-            (idx === 0 && "bg-gradient-to-r from-sky-500 to-indigo-500") ||
-            (idx === 1 && "bg-gradient-to-r from-[#734d26] to-[#bf8040]") ||
-            (idx === 2 && "bg-gradient-to-r from-sky-500 to-indigo-500") ||
-            (idx === 3 && "bg-gradient-to-r from-sky-500 to-indigo-500") ||
-            (idx === 4 && "bg-gradient-to-r from-[#009926] to-[#4dff79]") ||
-            (idx === 5 && "bg-gradient-to-r from-violet-500 to-fuchsia-500") ||
-            (idx === 6 && "bg-gradient-to-r from-[#b37d47] to-[#ffb366]") ||
-            (idx === 7 && "bg-gradient-to-r from-[#cc0000] to-pink-500") ||
-            (idx === 8 && "bg-gradient-to-r from-[#182729] to-[#5d6869]");
+          // bgColor =
+          //   (idx === 0 && "bg-gradient-to-r from-sky-500 to-indigo-500") ||
+          //   (idx === 1 && "bg-gradient-to-r from-[#734d26] to-[#bf8040]") ||
+          //   (idx === 2 && "bg-gradient-to-r from-sky-500 to-indigo-500") ||
+          //   (idx === 3 && "bg-gradient-to-r from-sky-500 to-indigo-500") ||
+          //   (idx === 4 && "bg-gradient-to-r from-[#009926] to-[#4dff79]") ||
+          //   (idx === 5 && "bg-gradient-to-r from-violet-500 to-fuchsia-500") ||
+          //   (idx === 6 && "bg-gradient-to-r from-[#b37d47] to-[#ffb366]") ||
+          //   (idx === 7 && "bg-gradient-to-r from-[#cc0000] to-pink-500") ||
+          //   (idx === 8 && "bg-gradient-to-r from-[#182729] to-[#5d6869]");
 
           return (
             <div
@@ -92,7 +93,7 @@ function Card2({ sports_details_2 }: Props) {
                 <p className="para-2">{sport.location}</p>
                 <button
                   style={{}}
-                  className={`collection before:content-[''] before:${bgColor}`}
+                  className={`collection before:content-[''] before:${sport.gradientColor}`}
                 >
                   {sport.collection} Collection
                 </button>

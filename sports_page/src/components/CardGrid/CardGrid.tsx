@@ -150,6 +150,7 @@ const sports_details_2 = [
     timeClock: "4:30",
     location: "las vegas ballpark, las vegas",
     collection: "take flight", // 0
+    gradientColor: "bg-gradient-to-r from-sky-500 to-indigo-500",
   },
   {
     id: 2,
@@ -160,6 +161,7 @@ const sports_details_2 = [
     timeClock: "7:30",
     location: "miami beach, florida",
     collection: "orange",
+    gradientColor: "bg-gradient-to-r from-[#734d26] to-[#bf8040]",
   },
   {
     id: 3,
@@ -170,6 +172,7 @@ const sports_details_2 = [
     timeClock: "4:30",
     location: "las vegas ballpark, las vegas",
     collection: "take flight", //2
+    gradientColor: "bg-gradient-to-r from-sky-500 to-indigo-500",
   },
   {
     id: 4,
@@ -180,6 +183,7 @@ const sports_details_2 = [
     timeClock: "3:00",
     location: "baltimore ballpark, texas",
     collection: "take flight", // 3
+    gradientColor: "bg-gradient-to-r from-sky-500 to-indigo-500",
   },
   {
     id: 5,
@@ -190,6 +194,7 @@ const sports_details_2 = [
     timeClock: "1:30",
     location: "boston lake, boston",
     collection: "boston",
+    gradientColor: "bg-gradient-to-r from-[#009926] to-[#4dff79]",
   },
   {
     id: 6,
@@ -200,6 +205,7 @@ const sports_details_2 = [
     timeClock: "2:30",
     location: "chicago, new york",
     collection: "chicago",
+    gradientColor: "bg-gradient-to-r from-violet-500 to-fuchsia-500",
   },
   {
     id: 7,
@@ -210,6 +216,7 @@ const sports_details_2 = [
     timeClock: "4:30",
     location: "detroit, las vegas",
     collection: "detroit",
+    gradientColor: "bg-gradient-to-r from-[#b37d47] to-[#ffb366]",
   },
   {
     id: 8,
@@ -220,6 +227,7 @@ const sports_details_2 = [
     timeClock: "4:30",
     location: "cleveland park",
     collection: "cleveland",
+    gradientColor: "bg-gradient-to-r from-[#cc0000] to-pink-500",
   },
   {
     id: 9,
@@ -230,6 +238,7 @@ const sports_details_2 = [
     timeClock: "4:30",
     location: "colorado, south texas",
     collection: "colorado",
+    gradientColor: "bg-gradient-to-r from-[#182729] to-[#5d6869]",
   },
 ];
 

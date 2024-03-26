@@ -12,6 +12,7 @@ interface Sports {
   timeClock: string;
   location: string;
   collection: string;
+  gradientColor: string;
 }
 
 interface Props {
