@@ -93,7 +93,7 @@ function Card2({ sports_details_2 }: Props) {
                 <p className="para-2">{sport.location}</p>
                 <button
                   style={{}}
-                  className={`collection before:content-[''] before:${bgColor}`}
+                  className={`collection before:content-[''] before:bg-gradient-to-r from-violet-500 to-fuchsia-500`}
                 >
                   {sport.collection} Collection
                 </button>
