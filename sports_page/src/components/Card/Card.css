@@ -112,9 +112,6 @@
   display: block;
 }
 
-.carousel .card2.active {
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -199,6 +196,8 @@ h4 {
   z-index: 1;
   transition: all 1s ease-in;
 }
+.collection:hover {
+}
 .collection::before {
   content: "" !important;
   position: absolute;
@@ -209,7 +208,7 @@ h4 {
   transition: width 1s;
   z-index: -1;
 }
-.collection:hover::before {
+.collection:hover:before {
   width: 100% !important;
 }
 

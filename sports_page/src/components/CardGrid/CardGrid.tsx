@@ -163,7 +163,7 @@ const sports_details_2 = [
   },
   {
     id: 3,
-    img: sportImg_4,
+    img: ticket_1_2,
     heading: "Atlanta Braves",
     timeMonth: "Oct 15",
     timeDay: "Sun",
