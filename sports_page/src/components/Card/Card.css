@@ -208,7 +208,7 @@ h4 {
   transition: width 1s;
   z-index: -1;
 }
-.collection:hover:before {
+.collection:hover::before {
   width: 100% !important;
 }
 
