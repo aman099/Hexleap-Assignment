@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import "./Card.css";
 
 import useMediaQuery from "../useMediaQuery/useMediaQuery";
@@ -19,8 +19,6 @@ interface Props {
   sports_details_2: Sports[];
 }
 
-let bgColor;
-
 function Card2({ sports_details_2 }: Props) {
   const matches = useMediaQuery("(max-width: 1010px)");
   const matches2 = useMediaQuery("(max-width: 720px)");
@@ -28,6 +26,7 @@ function Card2({ sports_details_2 }: Props) {
   const [activeIndex1, setActiveIndex1] = useState(0);
   const [activeIndex2, setActiveIndex2] = useState(1);
   const [activeIndex3, setActiveIndex3] = useState(2);
+  let bgColor: string | boolean;
 
   function handlePrevClick() {
     setActiveIndex1((activeIdx1) =>
@@ -93,7 +92,7 @@ function Card2({ sports_details_2 }: Props) {
                 <p className="para-2">{sport.location}</p>
                 <button
                   style={{}}
-                  className={`collection before:content-[''] before:bg-gradient-to-r from-violet-500 to-fuchsia-500`}
+                  className={`collection before:content-[''] before:${bgColor}`}
                 >
                   {sport.collection} Collection
                 </button>
