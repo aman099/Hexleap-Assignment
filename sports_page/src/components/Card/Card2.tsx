@@ -92,7 +92,8 @@ function Card2({ sports_details_2 }: Props) {
                 </p>
                 <p className="para-2">{sport.location}</p>
                 <button
-                  className={`before:content-[''] before:${bgColor} collection`}
+                  style={{}}
+                  className={`collection before:content-[''] before:${bgColor}`}
                 >
                   {sport.collection} Collection
                 </button>

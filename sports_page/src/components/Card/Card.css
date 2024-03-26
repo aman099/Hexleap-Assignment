@@ -196,8 +196,8 @@ h4 {
   z-index: 1;
   transition: all 1s ease-in;
 }
-.collection:hover {
-}
+/* .collection:hover {
+} */
 .collection::before {
   /* content: "" !important; */
   position: absolute;
