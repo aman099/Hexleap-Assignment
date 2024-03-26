@@ -199,7 +199,7 @@ h4 {
 .collection:hover {
 }
 .collection::before {
-  content: "" !important;
+  /* content: "" !important; */
   position: absolute;
   top: 0;
   left: 0;

@@ -91,7 +91,9 @@ function Card2({ sports_details_2 }: Props) {
                   {sport.timeMonth} | {sport.timeDay} | {sport.timeClock}hrs
                 </p>
                 <p className="para-2">{sport.location}</p>
-                <button className={`before:${bgColor} collection`}>
+                <button
+                  className={`before:content-[''] before:${bgColor} collection`}
+                >
                   {sport.collection} Collection
                 </button>
               </div>
